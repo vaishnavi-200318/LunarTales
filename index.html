@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LunarTales</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">LunarTales</a>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li> 
+    </ul>
+   </header>
+   <section>
+    <!-- <img src="./15Z_2102.w026.n002.163B.p1.163-removebg-preview.png" alt="moon" id="moon"> -->
+    <img src="./mointain-removebg-preview.png" alt="mountian_back" id="mountian_back">
+    <h2 id="text">LunarTales </h2>
+    <a href="#sec" id="btn">Explore</a>
+    <img src="./land-removebg-preview.png" alt="mountain_front" id="mountain_front">
+   </section>
+   <div class="sec" id="sec">
+    <h2>LunarTales</h2>
+    <h3>Where Moonlit Dreams Turn into Stories</h3>
+    <p>Welcome to Lunar Tales, a celestial haven where the night sky whispers secrets, and every star tells a story. In this enchanted space, the moonlight isn't just a glow—it's a gateway to worlds unseen, where dreams take shape and imagination knows no bounds. Our stories are crafted especially for teenagers, capturing the thrill of adventure, the depth of emotion, and the magic of the unknown. </p>
+
+     <p>Each tale in Lunar Tales is like a journey through a moonlit forest, where every turn reveals something new and wondrous. Whether you’re seeking the excitement of an epic quest, the warmth of a heartfelt friendship, or the mystery of a forgotten realm, our stories will guide you through the night, filling your mind with wonder and your heart with inspiration.</p>
+      
+    <p>  So, come along, dreamers and storytellers alike. Let the moonlight guide you as you step into our world, where every page is a new beginning, and every story is a reflection of your own untold adventures. Lunar Tales is where your moonlit dreams turn into stories that will stay with you long after the night fades into dawn. </p>
+    
+ 
+  </div>
+  <div class="colored">
+    <div class="card-1">
+    <div class="card">
+        <a href="./story.html"> 
+        <img src="./story2.jpeg" alt="story1">
+        <div class="intro">
+            <h1>The Moonlit Garden</h1>
+            <p>A hidden shrine, an ancient pendant, and a newfound power. Yumi's journey to become the protector of the realm begins</p>
+        </div>
+    </div>
+    
+    <div class="card">
+      <a href="./story2.html"> 
+      <img src="./story1.jpeg" alt="story1">
+      <div class="intro">
+          <h1>The Firefly's heart</h1>
+          <p>In a village shrouded in darkness, a girl named Mei held the fate of the forest in her hands. With a single wish, she could save her mother, but at what cost?</p>
+      </div>
+  </div>
+  <div class="card">
+    <a href="./story.html"> 
+    <img src="./story11.jpeg" alt="story1">
+    <div class="intro">
+        <h1>The Glass Prince</h1>
+        <p>Two brothers, one throne. A battle for supremacy begins. Who will reign supreme in the shadow of their family's legacy?</p>
+    </div>
+</div>
+<div class="card">
+  <a href="./story2.html"> 
+  <img src="./story3.jpeg" alt="story1">
+  <div class="intro">
+      <h1>Frog Prince's Dilemma</h1>
+      <p>A modern-day prince, trapped in a frog's body, must navigate high school drama and royal responsibilities while searching for a kiss that will break the curse.</p>
+  </div>
+</div>
+
+<div class="card">
+<a href="./story.html"> 
+<img src="./story4.jpeg" alt="story1">
+<div class="intro">
+    <h1>Neon Blade</h1>
+    <p>In a cyberpunk world,  a lone hacker fights for freedom against a corrupt corporation.</p>
+</div>
+</div>
+<div class="card">
+<a href="./story2.html"> 
+<img src="./story5.jpeg" alt="story1">
+<div class="intro">
+  <h1>HeartBeats</h1>
+  <p>A chance encounter in the school library, a shared secret whispered in the hallway. Their connection was undeniable, but how did it spark into a full-blown romance?</p>
+</div>
+</div>
+<div class="card">
+  <a href="./story2.html"> 
+  <img src="./story7.jpeg" alt="story1">
+  <div class="intro">
+      <h1>Shadowed Secrets</h1>
+      <p>They thought they knew their town. But it was hiding secrets darker than any of their wildest dreams.</p>
+  </div>
+</div>
+
+<div class="card">
+<a href="./story.html"> 
+<img src="./story8.jpeg" alt="story1">
+<div class="intro">
+    <h1>Crimson Tide</h1>
+    <p>The crimson tide was coming. The villagers, once peaceful, now faced their darkest hour. Could they survive the night of the glowing eyes?</p>
+</div>
+</div>
+<div class="card">
+<a href="./story2.html"> 
+<img src="./story9.jpeg" alt="story1">
+<div class="intro">
+  <h1>Daemonic Dawn</h1>
+  <p>The city was a beacon of hope. Now, it's a demon's playground. Can anyone survive?</p>
+</div>
+</div>
+</div>
+</div>
+   <script>
+    let mountian_back=document.getElementById('mountian_back');
+   let header = document.querySelector('header');
+    let text=document.getElementById('text')
+    let btn=document.getElementById('btn')
+    let mountain_front=document.getElementById('mountain_front');
+    window.addEventListener('scroll',function(){
+      let value = window.scrollY;
+      mountian_back.style.top = value * 0.5 + 'px';
+      mountain_front.style.top =value * 0 + 'px';
+      text.style.marginRight = value * 4 + 'px';
+      text.style.marginTop= value * 1.5 +'px';
+      btn.style.marginTop= value * 2 +'px';
+      header.style.top =value * 0.5 + 'px';
+    })
+   </script>
+</body>
+</html>
